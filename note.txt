@@ -1,0 +1,7 @@
+*Return
+    string: return dat;
+    array: return ['dat'];
+    object: return response()->json(['name'=>'Do Thanh Dat','email'=>'email']);
+*Redirect
+    redirect('url');
+ 

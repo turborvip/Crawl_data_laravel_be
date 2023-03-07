@@ -1,0 +1,53 @@
+
+Model:
+
+    php artisan make:model MyModel 
+
+Controller:
+
+    php artisan make:controller MyController
+
+Migration:
+
+    help us create file migrate (src/database/migrate)
+    php artisan make:model MyModel -m
+
+    run command to create table from file migrate
+    docker-compose exec php php /var/www/html/artisan migrate
+
+    run command to view status migrate
+    docker-compose exec php php /var/www/html/artisan migrate:status
+
+    run command to rollback all migrate
+    docker-compose exec php php /var/www/html/artisan migrate:reset
+
+<<<<<<< HEAD
+=======
+Command:
+
+    make command
+    php artisan make:command YourCommand
+
+    run command
+    php artisan command
+    docker exec php php /var/www/html/artisan command
+>>>>>>> ac5b240 (update)
+Scheduled:
+    php artisan schedule:work local
+    
+    run the following command to start the task scheduler:
+    docker-compose exec php php /var/www/html/artisan schedule:work
+    
+<<<<<<< HEAD
+    * * * * * cd /path/to/your/project && php artisan schedule:run >> /dev/null 2>&1 production
+=======
+    * * * * * cd /path/to/your/project && php artisan schedule:run >> /dev/null 2>&1 production
+
+Serve:
+    To run serve
+    php artisan serve
+
+Seed:
+    docker-compose exec php php /var/www/html/artisan db:seed --class=UsersTableSeeder
+
+>>>>>>> ac5b240 (update)
